@@ -1,20 +1,13 @@
-public class Persona {
-    String nombre;
-    int edad;
-
-    void saludar() {
-        System.out.println("Hola, soy " + nombre + " y tengo " + edad + " años.");
-    }
-
+public class Proyecto2 {
     public static void main(String[] args) {
-        Persona p1 = new Persona();
-        p1.nombre = "Daniel";
-        p1.edad = 18;
-        p1.saludar();
+        String base = "Hola,soy %s y tengo %s.";
+        
+        String persona1 = String.format(base, "Daniel", "17");
+        String persona2 = String.format(base, "Felix", "48");
+        String persona3 = String.format(base, "Danna", "23");
 
-        Persona p2 = new Persona();
-        p2.nombre = "Samuel";
-        p2.edad = 13;
-        p2.saludar();
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println(persona3);
     }
 }
