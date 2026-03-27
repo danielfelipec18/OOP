@@ -3,25 +3,31 @@
 using namespace std;
 
 class Persona {
-public:
-   string nombre;
-   int edad;
+ public:
+ string nombre;
+ int edad;
 
-   void saludar(){
-      cout <<"Hola, soy " << nombre << " y tengo "<< edad << " años.\n";
-   }
+ void mostrar() {
+ cout << "Nombre = " << nombre << "\n";
+ cout << "Edad = " << edad << "\n";
+ }
 };
 
 int main() {
+ Persona p1;
+ Persona p2;
 
-   Persona p1;
-   p1.nombre ="Daniel";
-   p1.edad = 18;
-   p1.saludar();  
+ p1.nombre = "Ana";
+ p1.edad = 20;
 
-   Persona p2;
-   p2.nombre ="Samuel";
-   p2.edad = 13;
-   p2.saludar();
-  return 0;
+ p2.nombre = "Luis";
+ p2.edad = 22;
+
+ cout << "Objeto 1:\n";
+ p1.mostrar();
+
+ cout << "\nObjeto 2:\n";
+ p2.mostrar();
+ 
+ return 0;
 }
